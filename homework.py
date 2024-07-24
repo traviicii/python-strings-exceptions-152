@@ -1,7 +1,7 @@
 # Calculator app
 
-from helper import d, fd, welcome, clear, reset
-from operations import addition, subtraction, division, multiply
+from helper import d, fd, welcome, clear, reset, exit
+from operations import addition, subtraction, division, multiply, exponents
 
 def main():
     welcome()
@@ -31,8 +31,10 @@ Select an action you'd like to perform:
             multiply() # multiplication
         elif action == '5':
             reset()
-            pass # exponents
+            exponents() # exponents
         elif action == '6':
+            clear()
+            exit()
             break
 
 main()

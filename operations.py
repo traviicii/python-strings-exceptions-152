@@ -57,3 +57,17 @@ def multiply():
         else:
             print(f"The result of multiplying {a} x {b} = {a * b}")
             break
+
+def exponents():
+    '''Get inputs a and b from the user and raises a to the power of b.'''
+    while True:
+        try:
+            a = int(input("Please enter the number for the base of our exponential operation: "))
+            b = int(input("Please enter the number for the power: "))
+        except ValueError:
+            print("Please enter valid numbers!")
+        except Exception as e:
+            print(f"Oops, unexpected error: {e}")
+        else:
+            print(f"The result of {a} rasied to the power of {b} = {a ** b}")
+            break
